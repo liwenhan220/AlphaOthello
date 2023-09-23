@@ -20,7 +20,11 @@ run `init.py` to first create a random neural network
 run `selfplay.py`, it will store self-play games in the `data` folder, but remember to change the `example_count` variable in this file just to store selfplay data into
 different files
 
-run `train-v2.py` to load from `data` folder to train a model, but adjust the `min_c` and `max_c` to choose the portion of data to load.
+run `train-v2.py` to load from `data` folder to train a model, but adjust the `min_c` and `max_c` to choose the portion of data to load. This only trains the keras model
+
+`keras_to_tf.py` converts the keras model to tensorflow model, and `tf_to_trt.py` converts tensorflow model to tensorRT model. This needs to be repeated everytime before training (it is annoying, sorry that I was not very good at coding at that time). My training code is only used for training keras models, but tensorRT models are much faster in generating self play games.
+
+`play-v2.py` is a graphical user interface, running this script will initiate a match against the trained tensorRT model.
 
 # Results
 Posting all the training data gathered in the releases folder.
