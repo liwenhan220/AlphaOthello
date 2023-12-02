@@ -5,7 +5,7 @@ My first working version of alphazero on Othello, trained on my laptop for three
 I built this at the end of my freshmen year. I didn't have the habit of publishing my code, but recently I lost a lot of my favorite code
 when I removed my broken linux system before I realize that the code were not successfully copied to my usb drive. It's been a long time since the last time
 I worked on this code because I got a satisfying result and started working on other things.
-A lot of modification to accelerate the code so that I could train a decent model, so I am going to write about how to use the code based on my memory.
+I added a lot of modification to accelerate the code so that I could train a decent model, so I am going to write about how to use the code based on my memory.
 
 # Usage
 Install a correct version of cuda and tensorrt (I kind of forgot which version)
